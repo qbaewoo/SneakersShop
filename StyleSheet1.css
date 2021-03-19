@@ -1,0 +1,119 @@
+﻿
+section {
+    position: relative;
+    width: 100%;
+    min-height: 15vh;
+    padding: 50px 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+    .dropdown .dropbtn {
+        cursor: pointer;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: inherit;
+        font-family: inherit;
+        margin-left: 10px;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+        color: #fadc2a;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        float: none;
+        color: #fff;
+        padding: 0;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+
+.show {
+    display: block;
+}
+
+
+
+
+
+.langWrap a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+    background: #000;
+    font-size: 18px;
+}
+
+    .langWrap a:hover {
+        color: blueviolet;
+        background: #fff;
+    }
+
+    .langWrap a.active {
+        color: #000;
+        background: #fadc2a;
+    }
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px, 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    header .logo {
+        position: relative;
+        max-width: 200px;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+
+    header ul {
+        position: relative;
+        display: flex;
+    }
+
+        header ul li {
+            list-style: none;
+        }
+
+            header ul li a {
+                display: inline-block;
+                color: #fff;
+                margin-left: 30px;
+                margin-right: 10px;
+                font-weight: 400;
+                text-decoration: none;
+            }
+
+                header ul li a:hover {
+                    color: #fadc2a;
+                }
+

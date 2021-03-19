@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SneakerShop</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <link rel="icon" href="https://mysneakershop.es/wp-content/uploads/2021/02/cropped-logo_mss.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="Script1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body style="background: #000; color: #fff;">
+
+    <section>
+        <header class="header">
+            <a href="#"><img width="200" src="logo.png" class="logo" /></a>
+            <ul class="navigation">
+                <li class="home"><a href="HTMLPage1.html">Home</a></li>
+                <li class="products"><a href="Products.html">Products</a></li>
+
+                <li class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">
+                        Account
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="MyAccount.html">My Account</a>
+                        <a href="#">Favorite</a>
+                        <a href="Login.html">Log out</a>
+                    </div>
+                </li>
+
+                <li class="register"><a href="Register.html" style="margin-right: 0;">Register</a></li>
+                <li><a href="#">|</a></li>
+                <li class="login"><a href="Login.html" style="margin-left: 0;"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                <li style="margin-right: 30px; margin-left: 20px;" class="langWrap">
+                    <a href="#en" language='english' class="active">EN</a>
+                    <a href="#ru" language='russian'>РУ</a>
+                </li>
+            </ul>
+        </header>
+    </section>
+
+
+
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="d-block w-100" alt="pic1">
+                    <div class="carousel-caption d-none d-md-block" style="color: #e5bbbb;">
+                        <h1>New!</h1>
+                        <h4>Nulla vitae elit libero, a pharetra augue mollis interdum.</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fHNuZWFrZXJzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="d-block w-100" alt="pic2">
+                    <div class="carousel-caption d-none d-md-block" style="color: #a75a11;">
+                        <h1>Lorem</h1>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1597248881519-db089d3744a5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c25lYWtlcnN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="d-block w-100" alt="dinner">
+                    <div class="carousel-caption d-none d-md-block" style="color: #ffd300;">
+                        <h1>Air Jordan</h1>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div style="margin-left: 450px;">
+        <div id="Flights" class="tabcontent">
+            <p>Please enter the number of sneackers that you want to look at?</p>
+            <input id="d" style="width:350px; height:40px; font-size:20px; border:1px grey solid; box-shadow: 0 0 5px rgb(245, 240, 240); border-radius:15px" type="text" placeholder="ID" />
+            <button onclick="getd()" class="btn btn-outline-light" style="margin-bottom:12px; margin-left:10px">Search</button>
+            <div id="111" style="width:100%;">
+                <img id="d3" src="" style="height:200px; width:400px; object-fit: cover; border:1px white solid; box-shadow: 5px 5px 5px black; transition:0.5s; border-radius:15px" />
+                <p id="d1" style="font-size: 20px; color: rgb(245, 236, 236);"></p>
+                <p id="d2" style="font-size: 20px; color: rgb(240, 231, 231);"></p>
+            </div>
+        </div>
+
+
+        <div id="Flights" class="tabcontent">
+            <p>Please enter the number of sneackers that you want to look at?</p>
+            <input id="mmm" style="width:350px; height:40px; font-size:20px; border:1px grey solid; box-shadow: 0 0 5px rgb(243, 234, 234); border-radius:15px" type="text" placeholder="ID" />
+            <button onclick="getm()" class="btn btn-outline-light" style="margin-bottom:12px; margin-left:10px">Search</button>
+            <div id="111" style="width:100%;">
+                <img id="m3" src="" style="height:200px; width:400px; object-fit: cover; border:1px white solid; box-shadow: 5px 5px 5px black; transition:0.5s; border-radius:15px" />
+                <p id="m1" style="font-size: 20px; color: rgb(245, 236, 236);"></p>
+                <p id="m2" style="font-size: 20px; color: rgb(240, 231, 231);"></p>
+            </div>
+        </div>
+
+        <div id="Flights" class="tabcontent">
+            <p>Please enter the number of sneackers that you want to look at?</p>
+            <input id="kami" style="width:350px; height:40px; font-size:20px; border:1px grey solid; box-shadow: 0 0 5px rgb(243, 234, 234); border-radius:15px" type="text" placeholder="ID" />
+            <button onclick="geta()" class="btn btn-outline-light" style="margin-bottom:12px; margin-left:10px">Search</button>
+            <div id="111" style="width:100%;">
+                <img id="k3" src="" style="height:200px; width:400px; object-fit: cover; border:1px white solid; box-shadow: 5px 5px 5px black; transition:0.5s; border-radius:15px" />
+                <p id="k1" style="font-size: 20px; color: rgb(245, 236, 236);"></p>
+                <p id="k2" style="font-size: 20px; color: rgb(240, 231, 231);"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Script1.js"></script>
+</body>
+</html>
